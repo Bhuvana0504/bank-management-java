@@ -10,7 +10,7 @@ class ParkingLot{
     void park(Car c){
         if(mp.size()<cap){
             mp.put(c.getLic(),c);
-            System.out.printf("Car Parked: %s",c.getLic());
+            System.out.println("Car Parked: "+c.getLic());
         }
         else{
             System.out.println("Parking Lot is full!!!");
@@ -22,7 +22,7 @@ class ParkingLot{
         }
         else{
             for(Car c:mp.values()){
-                System.out.println("Car License: "+c.getLic()+"Car Colour: "+c.getCol());
+                System.out.println("Car License: "+c.getLic()+" Car Colour: "+c.getCol());
             }
         }
     }
