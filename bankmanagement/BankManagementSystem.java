@@ -12,6 +12,7 @@ public class BankManagementSystem {
             System.out.println("4. Display Account Details");
             System.out.println("5. Exit");
             int ch = sc.nextInt();
+            sc.nextInt();
             switch(ch){
                 case 1:
                     System.out.println("Enter the Account Number: ");
